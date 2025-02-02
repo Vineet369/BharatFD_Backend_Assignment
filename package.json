@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js",
+    "test": "mocha --timeout 5000"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +19,11 @@
     "redis": "^4.7.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.9"
+    "chai": "^5.1.2",
+    "chai-http": "^5.1.1",
+    "mocha": "^11.1.0",
+    "mongoose-mock": "^0.4.0",
+    "nodemon": "^3.1.9",
+    "sinon": "^19.0.2"
   }
 }
