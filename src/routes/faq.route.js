@@ -7,8 +7,8 @@ const router = Router();
 
 router.route("/getFaqs").get(getFaq);
 router.route("/add").post(isAdmin,addFaq);
-router.route("/update").post(isAdmin,updateFaq); 
-router.route("/delete").get(isAdmin,deleteFaq);  
+router.route("/update/:faqId").post(isAdmin,updateFaq); 
+router.route("/delete/:faqId").get(isAdmin,deleteFaq);  
 
 
 export default router;
